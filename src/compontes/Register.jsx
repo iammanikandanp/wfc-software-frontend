@@ -121,7 +121,7 @@ const isValidPhone = phone =>
     setIsSubmitting(true);
     try {
 
-      const response = await axios.post("http://localhost:5000/api/v1/register", formData);
+      const response = await axios.post("https://wfc-software-backend.onrender.com/api/v1/register", formData);
       if (response) toast.success(response.data.message);
       navigate("/");
     } catch {
