@@ -99,7 +99,7 @@ export const UserDetails = () => {
                 userData.map((user,index) => (
                   <tr
                     key={user._id}
-                    className="hover:bg-indigo-50 transition-all duration-200"
+                    className="hover:bg-indigo-50 transition-all duration-200 text-center"
                   >
                     <td className="px-4 py-3 border border-gray-200">{index+1}</td>
                     <td className="px-4 py-3 border border-gray-200">{user.name}</td>
@@ -120,7 +120,7 @@ export const UserDetails = () => {
                     <td className="px-4 py-3 border border-gray-200">{user.address}</td>
                     <td className="px-4 py-3 border border-gray-200">
                       <Link to={`/update/${user._id}`}>
-                        <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white px-3 py-1 rounded">
+                        <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white p-3  rounded">
                          <FaEdit />
                         </button>
                       </Link>

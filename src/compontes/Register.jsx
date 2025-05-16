@@ -312,7 +312,7 @@ const isValidPhone = phone =>
           {step < 5 ? (
             <button type="button" onClick={handleNext} className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Next</button>
           ) : (
-   <button type="submit" disabled={isSubmitting}>
+   <button type="submit" disabled={isSubmitting} className=" bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-700" >
   {isSubmitting ? "Submitting..." : "Finish"}
 </button>
           )}
