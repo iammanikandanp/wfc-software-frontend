@@ -9,7 +9,7 @@ export const UserDetails = () => {
  useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/v1/fetch");
+      const response = await axios.get("https://wfc-software-backend.onrender.com/api/v1/fetch");
       const rawData = response.data.data || [];
       const processedData = rawData.map(user => {
         const updatedUser = {};
@@ -42,7 +42,7 @@ export const UserDetails = () => {
   const handleDelete = async (id) => {
     try {
      await axios.post(
-               `http://localhost:5000/api/v1/delete/${id}`
+               `https://wfc-software-backend.onrender.com/api/v1/delete/${id}`
              );
       setUserData(userData.filter(user => user._id !== id));
       console.log("Deleted user ID:", id);
