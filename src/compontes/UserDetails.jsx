@@ -120,7 +120,7 @@ export const UserDetails = () => {
                     <td className="px-4 py-3 border border-gray-200">{user.address}</td>
                     <td className="px-4 py-3 border border-gray-200">
                       <Link to={`/update/${user._id}`}>
-                        <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white p-3  rounded">
+                        <button className="bg-green-500 hover:bg-green-600 cursor-pointer text-white p-3 rounded-lg">
                          <FaEdit />
                         </button>
                       </Link>
